@@ -1,0 +1,87 @@
+/**
+* GENERAL / CLASSES
+*
+**/
+
+body {
+  min-width: 320px;
+}
+
+.hidden {
+  display: none;
+}
+
+/**
+* HEADER
+*
+**/
+
+.navbar {
+  padding-bottom: 5px;
+  padding-top: 5px;
+
+  background-color: $primary;
+
+  .navbar-brand {
+    margin: 0;
+
+    color: $white;
+  }
+}
+
+/**
+* CONTENT
+*
+**/
+
+.search {
+  margin-top: 30px;
+}
+
+.result {
+  margin-top: 50px;
+  text-align: center;
+}
+
+select[name="city"] {
+  max-width: 500px;
+  font-weight: bold;
+  font-size: 16px;
+}
+/**
+* HELPERS / OTHERS
+*
+**/
+.spinner-wrapper {
+  z-index: 101;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+
+  svg path {
+    fill: $body-color;
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 16px;
+
+  background-color: $primary;
+
+  .api-credits {
+    color: $white;
+    float: left;
+    font-size: 0.675rem;
+    padding-top: 4px;
+  }
+
+  .author-credits {
+    color: $white;
+    float: right;
+  }
+}

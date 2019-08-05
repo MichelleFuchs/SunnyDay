@@ -1,9 +1,13 @@
+
 const express = require("express");
 const app = express();
 const cors = require("cors");
 const path = require("path");
 const bodyParser = require("body-parser");
 
+let corsOptions = {
+  origin: "https://sunnyday-mf.herokuapp.com/"
+};
 //Middleware
 app.use(bodyParser.json());
 app.use(cors());

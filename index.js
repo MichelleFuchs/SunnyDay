@@ -10,7 +10,7 @@ let corsOptions = {
 };
 //Middleware
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors(corsOptions));
 
 //Routing API
 const weather = require("./api/weather");
